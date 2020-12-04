@@ -1,0 +1,55 @@
+<div class="container-fluid">
+  <div class="row" class="main_top" style="height: 4.5vh;">
+    <!--------------------- User Page Top Bar------------------------------------------->
+    <app-user-top-bar></app-user-top-bar>
+  </div>
+  <div class="row">
+    <div class="col" class="main_sidebar" style="height: 95vh;">
+
+      <div class="row" class="sidebar_top" style="height: 10vh;">
+        <!---------------------User Page SideBar Top------------------------------------------->
+        <app-user-sidebar-top></app-user-sidebar-top>
+      </div>
+      <div class="row" style="border-bottom:solid 2px lightgrey; height:10vh; padding-top: 2vh;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <!-- <input class="form-control " #search (keyup)="onChange(search.value)" style="text-align: center;"
+            placeholder="Seacrh here..."> -->
+            <div class="search-box">
+              <div class="input-wrapper">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input placeholder="Search here" #search (keyup)="onChange(search.value)"  type="text">
+              </div>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="row" style=" height: 75vh; overflow:auto;">
+        <!---------------------User Page Sidebar------------------------------------------->
+        <app-user-sidebar></app-user-sidebar>
+      </div>
+
+
+    </div>
+    <div class="col" class="main_chatbox" style="height: 95vh;">
+      <div class="row" class="chatbox_top" style="height: 10vh;">
+        <!---------------------User Page Chat Box Top------------------------------------------->
+        <app-user-chat-box-top></app-user-chat-box-top>
+      </div>
+      <div class="row" class="chatbox_top" style=" overflow:auto; height: 75vh; background-color: transparent">
+        <!---------------------User Page Chat Box------------------------------------------->
+        <app-user-chat-box></app-user-chat-box>
+      </div>
+      <div class="row" class="chatbox_top" style="height: 10vh; background-color:white">
+        <!---------------------User Page Chat Box Bottom------------------------------------------->
+        <app-user-chat-box-bottom></app-user-chat-box-bottom>
+      </div>
+    </div>
+    <div class="col" class="main_sidebar" style="height: 50vh;">
+      <router-outlet></router-outlet>
+    </div>
+
+
+
+  </div>
+</div>

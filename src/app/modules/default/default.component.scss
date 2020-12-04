@@ -1,0 +1,36 @@
+/* CSS Document */
+/* create account */
+* {
+	margin: 0px;
+	padding: 0px;
+}
+#main-box {
+	background-image: url('../../../assets/images/795cabc4647f73b365e2e6eabd0f34dc.png') no-repeat;
+	background-size: cover;
+	height: 650px;
+}
+#main-nav {
+	li {
+		list-style: none;
+		float: left;
+		a {
+			padding: 15px;
+			text-decoration: none;
+			display: block;
+			color: white;
+			font-weight: bold;
+			&:hover {
+				font-size: 20px;
+				color: white;
+			}
+		}
+	}
+	transition: all 500ms ease;
+}
+#getinfo {
+	background-color: white;
+	height: 500px;
+}
+#sh {
+	font-weight: bold;
+}

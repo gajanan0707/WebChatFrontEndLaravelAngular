@@ -1,0 +1,14 @@
+<div class="d-flex">
+  <div class="" style="margin-left: 5px; width: 60px; ">
+    <img src="assets/images/imogi.png" (click) ="toggleEmojiPicker()" class="rounded-circle img-thumbnail" style="width: 60px; margin-top: 5px;">
+    <emoji-mart class="emoji-mart"  *ngIf="showEmojiPicker"  (emojiSelect)="addEmoji($event)" title="Pick your emoji…"></emoji-mart>
+  </div>
+  <div style="margin-top: 2%; margin-left: 10px ;">
+    <input #input id="userInput,message" name="message" [(ngModel)]="message" style="width: 38vw; height: 6vh; " aria-multiline="true" (blur)="onBlur()" (focus)="onFocus()">
+  </div>
+  <div (click)="send(input.value)" style="margin-left: 5px; width: 50px; " class="send_button">
+    <img src="assets/images/send.png" class="rounded-circle img-thumbnail" style="width: 60px; margin-top: 5px;">
+  </div>
+
+
+</div>

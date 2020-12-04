@@ -1,0 +1,29 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="{{user.image}}" class="rounded-circle img-thumbnail mx-auto d-block"
+        style="width: 60px; margin-top: 5px;">
+    </div>
+    <div class="col-md-4" style="padding: 2%;">
+      <label style="color: #333; text-align: left;">{{user.name}}</label>
+    </div>
+    <div class="col-md-4">
+
+      <div class="dropdown" style="margin-left: -20px;">
+        <a data-toggle="dropdown">
+          <i style="float:right; font-size: 20px; margin-top: 20px; color: black;" class="fa fa-ellipsis-v"
+            aria-hidden="true"></i>
+        </a>
+
+        <div class="dropdown-menu">
+          <a class="dropdown-item" routerLink="profile">Profile</a>
+          <a class="dropdown-item" routerLink="about">About</a>
+          <a class="dropdown-item" routerLink="setting">Setting</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" (click)="logout()">Logout</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>

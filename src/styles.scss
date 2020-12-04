@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+// regular style toast 
+@import '~ngx-toastr/toastr';
+ 
+// if you'd like to use it without importing all of bootstrap it requires 
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+@import '~ngx-toastr/toastr-bs4-alert';
+
+.toast-container .ngx-toastr {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 6px;
+    padding: 15px 15px 15px 50px;
+    width: 300px;
+    border-radius: 15px !important;
+    background-position: 15px center;
+    background-repeat: no-repeat;
+    background-size: 24px;
+    box-shadow: 0 0 12px #999;
+    color: #fff;
+    border-image-source: linear-gradient(to right, #FFD54F, #D500F9) !important;
+    border: 4px solid rgb(5, 245, 5) !important;
+    border-image-source: linear-gradient(to right, #FFD54F, #D500F9) !important;
+    border-image-slice: 20 !important;
+}
+
+.toast-success {
+    background-color: #0fe90f;
+}
+
+

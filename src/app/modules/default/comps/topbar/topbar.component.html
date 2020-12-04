@@ -1,0 +1,17 @@
+<ul id="main-nav" style="height: 50px; background-color:#2CBDA5;">
+  <!---------------------Home Route------------------------------------------->
+  <li><a [routerLink]="['user']" *ngIf="isLogin">Home</a></li>
+
+  <!---------------------About Route------------------------------------------->
+  <li><a [routerLink]="['about']" *ngIf="isLogin">About</a></li>
+
+  <!---------------------Message Route------------------------------------------->
+  <li><a [routerLink]="['user']" *ngIf="isLogin">Message</a></li>
+
+  
+  <!---------------------Register Route------------------------------------------->
+  <li><a [routerLink]="['register']" *ngIf="!isLogin">Registraion</a></li>
+
+  <!---------------------Login Route------------------------------------------->
+  <li><a [routerLink]="['login']" *ngIf="!isLogin">Login</a></li>
+</ul>

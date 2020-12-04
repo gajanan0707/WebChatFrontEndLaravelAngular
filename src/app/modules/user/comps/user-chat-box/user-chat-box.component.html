@@ -1,0 +1,41 @@
+
+  <div *ngFor="let chat of chats">
+     <!-- sended Message box -->
+  <div  *ngIf="chat.sender==user.id" class="sended_message_box" >
+    <div class="">
+     <div style="float: left; font-weight: bold;" >
+      <label>  You</label>
+     </div>
+     <div style="float: right;" >
+     {{chat.created_at | date:'dd-MM-yyyy HH:mm:ss'}}
+    </div>
+    </div><br>
+    <br>
+  <div >
+  {{chat.text}}
+  </div>
+  </div>
+  
+  
+  <!-- Recieved Message box -->
+  <div  *ngIf="chat.sender!=user.id"  class="recieved_message_box" >
+    <div class="">
+     <div style="float: left; font-weight: bold;" >
+      <label>{{ chat.sender_name}}</label>
+     </div>
+     <div style="float: right;" >
+     {{chat.created_at | date:'dd-MM-yyyy HH:mm:ss'}}
+    </div>
+    </div><br>
+    <br>
+  <div >
+  {{chat.text}}
+  </div>
+  </div>
+  </div>
+  
+
+  
+
+  
+  
